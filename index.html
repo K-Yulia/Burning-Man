@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Burning Man</title>
+    <link rel="icon" href="./favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="container page-header__container">
+        <nav class="page-navigation">
+          <a lang="en" class="logo link" href="./index.html">
+            <svg class="icon-logo">
+              <use href="./images/sprite.svg#icon-logo"></use>
+            </svg>
+          </a>
+          <ul class="menu list">
+            <li class="menu__item">
+              <a class="menu__link link" href="./index.html">Home</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link link" href="#about">About</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link link" href="#tickets">Tickets</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link link" href="#contacts">Contacts</a>
+            </li>
+          </ul>
+          <a class="contact__phone link" href="tel:+18938392364" id="contacts"
+            >+1 893 839-23-64</a
+          >
+          <button type="button" class="open-mobile-menu-btn" data-menu-open>
+            <svg class="open-mobile-menu-btn__icon">
+              <use href="./images/sprite.svg#icon-burger"></use>
+            </svg>
+          </button>
+        </nav>
+        <div class="mobile-menu js-menu" data-menu>
+          <div class="container mobile-menu__container">
+            <button class="mobile-menu__close-btn" data-menu-close>
+              <svg class="mobile-menu__close-icon">
+                <use href="./images/sprite.svg#icon-close"></use>
+              </svg>
+            </button>
+            <ul class="mobile-menu-nav js-nav list">
+              <li class="mobile-menu-nav__item">
+                <a class="mobile-menu-nav__link" href="./index.html">Home</a>
+              </li>
+              <li class="mobile-menu-nav__item">
+                <a class="mobile-menu-nav__link" href="#about">About</a>
+              </li>
+              <li class="mobile-menu-nav__item">
+                <a class="mobile-menu-nav__link" href="#tickets">Tickets</a>
+              </li>
+              <li class="mobile-menu-nav__item">
+                <a class="mobile-menu-nav__link" href="#contacts">Contacts</a>
+              </li>
+            </ul>
+            <a
+              class="mobile-menu-nav__contact__phone link"
+              href="tel:+18938392364"
+              id="contacts"
+              >+1 893 839-23-64</a
+            >
+          </div>
+        </div>
+        <div class="hero">
+          <p class="hero__text">Not tne event. The life</p>
+          <h1 class="main-title">Burning MAN</h1>
+          <button class="hero__btn button" type="button" id="tickets">
+            Book the tickets
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="about" id="about">
+        <div class="container about__container">
+          <h2 class="about__event__title">About the event</h2>
+          <ul class="about__list list">
+            <li class="about__item">
+              <h3 class="about__title">Rebuilding the society</h3>
+              <p class="about__text">
+                Burning Man is a network of people inspired by the values
+                reflected in the Ten Principles and united in the pursuit of a
+                more creative and connected existence in the world. Throughout
+                the year we work to build Black Rock City, home of the largest
+                annual Burning Man gathering, and nurture the distinctive
+                culture emerging from that experience.
+              </p>
+            </li>
+            <li class="about__item">
+              <h3 class="about__title">This drives us</h3>
+              <p class="about__text">
+                Burning Man Project will bring experiences to people in grand,
+                awe-inspiring and joyful ways that lift the human spirit,
+                address social problems, and inspire a sense of culture,
+                community, and civic engagement. Burning Man provides
+                infrastructural tools and frameworks to support local
+                communities in applying the Ten Principles through six
+                interconnected program areas, including Arts, Civic Involvement,
+                Culture, Education, Philosophical Center, and Social Enterprise.
+              </p>
+            </li>
+          </ul>
+          <ul class="gallery__list">
+            <li class="gallery__item">
+              <picture>
+                <source
+                  srcset="./images/img-1.webp 1x, ./images/img-1@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/img-1.jpg 1x, ./images/img-1@2x.jpg 2x"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/img-1.jpg"
+                  alt="man and fire lantern"
+                  class="gallery__photo"
+                />
+              </picture>
+            </li>
+            <li class="gallery__item">
+              <picture>
+                <source
+                  srcset="./images/img-2.webp 1x, ./images/img-2@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/img-2.jpg 1x, ./images/img-2@2x.jpg 2x"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/img-2.jpg"
+                  alt="the girl near the car"
+                  class="gallery__photo"
+                />
+              </picture>
+            </li>
+            <li class="gallery__item">
+              <picture>
+                <source
+                  srcset="./images/img-3.webp 1x, ./images/img-3@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/img-3.jpg 1x, ./images/img-3@2x.jpg 2x"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/img-3.jpg"
+                  alt="people with drums"
+                  class="gallery__photo"
+                />
+              </picture>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__container container">
+        <div class="page-footer__box">
+          <p class="page-footer__text">
+            <span>&#169;</span>1989<span class="page-footer__span">-2020</span>
+            burning man project
+          </p>
+          <p class="page-footer__text">
+            WAYUP <span>&#38;</span> Андрей Гаврилов
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/menu.js"></script>
+  </body>
+</html>

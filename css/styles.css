@@ -126,10 +126,16 @@ body {
     margin-right: 69px;
   }
 }
+
 .icon-logo {
   fill: var(--light-color);
   width: 31px;
   height: 48px;
+}
+
+.icon-logo:hover,
+.icon-logo:focus {
+  fill: #a9901d;
 }
 
 .menu {
@@ -151,9 +157,21 @@ body {
   text-transform: uppercase;
   color: #fff;
 }
+
+.menu__link:hover,
+.menu__link:focus {
+  color: #a9901d;
+}
+
 .contact__phone {
   display: none;
 }
+
+.contact__phone:hover,
+.contact__phone:focus {
+  color: #a9901d;
+}
+
 @media screen and (min-width: 768px) {
   .contact__phone {
     display: flex;
@@ -171,12 +189,19 @@ body {
     border: none;
     background-color: transparent;
   }
+
   .open-mobile-menu-btn__icon {
     width: 40px;
     height: 40px;
     fill: var(--light-color);
   }
+
+  .open-mobile-menu-btn__icon:hover,
+  .open-mobile-menu-btn__icon:focus {
+    fill: #a9901d;
+  }
 }
+
 @media screen and (min-width: 768px) {
   .open-mobile-menu-btn {
     display: none;
@@ -234,6 +259,11 @@ body {
   fill: var(--light-color);
 }
 
+.mobile-menu__close-icon:hover,
+.mobile-menu__close-icon:focus {
+  fill: #a9901d;
+}
+
 .mobile-menu-nav {
   display: flex;
   padding-top: 100px;
@@ -251,12 +281,21 @@ body {
   color: var(--light-color);
 }
 
+.mobile-menu-nav__link:hover,
+.mobile-menu-nav__link:focus {
+  color: #a9901d;
+}
+
 .mobile-menu-nav__contact__phone {
   font-size: 20px;
   text-transform: uppercase;
-  /* text-decoration-skip-ink: none; */
   color: var(--light-color);
   padding-bottom: 50px;
+}
+
+.mobile-menu-nav__contact__phone:hover,
+.mobile-menu-nav__contact__phone:focus {
+  color: #a9901d;
 }
 
 .hero__text {
@@ -303,6 +342,11 @@ body {
   background: transparent;
   padding-top: 4px;
   margin-bottom: 100px;
+}
+.hero__btn:hover,
+.hero__btn:focus {
+  color: #a9901d;
+  border: 2px solid #a9901d;
 }
 
 @media screen and (min-width: 768px) {
@@ -452,4 +496,33 @@ body {
 
 .page-footer__span {
   font-size: 14px;
+}
+
+.btn-shown-a {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  z-index: 98;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-scroll-up {
+  width: 25px;
+  height: 25px;
+  fill: rgb(196 205 26);
+}
+
+.btn-shown-a:hover,
+.btn-shown-a:focus {
+  border: 2px solid #a9901d;
+}
+
+.btn-shown-a:hover .btn-scroll-up,
+.btn-shown-a:focus .btn-scroll-up {
+  fill: #a9901d;
 }
